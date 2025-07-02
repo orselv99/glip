@@ -1,0 +1,7 @@
+{
+  "auth": {
+    "agreement" : "By clicking continue, you agree to our {terms} and {privacy}.",
+    "terms" : "Terms of Service",
+    "privacy" : "Privacy Policy"
+  }
+}
