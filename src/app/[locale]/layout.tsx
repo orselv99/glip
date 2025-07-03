@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import { ThemeProvider } from "@/component/theme";
-import LayoutWrapper from "@/component/layout";
+import "../../globals.css";
+import { ThemeProvider } from "@/components/theme";
+import LayoutWrapper from "@/components/layout";
 import { hasLocale, NextIntlClientProvider, useMessages } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
@@ -36,9 +36,6 @@ export default async function RootLayout({
   }
   
   return (
-    // ThemeProvider 에 의해 
-    // html tag 내 className, style 이 추가되어 hydrate error 가 발생할 수 밖에 없어서
-    // suppressHydrationWarning 추가
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}  >
         {/* system 설정을 따라감 */}
