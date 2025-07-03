@@ -6,7 +6,7 @@ import { supabase } from '@/lib/supabase'
 import Image from 'next/image';
 
 // loading 사용자의 정보 및 서비스 업데이트 내용 표시
-export default function CallbackPage() {
+export default function AuthCallbackPage() {
   const router = useRouter();
   const [user, setUser] = useState<any>(); // todo: interface 화
 
